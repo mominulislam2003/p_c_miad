@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# যদি কোনো ফোল্ডার গোপন রাখতে চাও, তখন Disallow দেবে যেমন:
+# Disallow: /admin/
+
+Sitemap: https://miad-portfolio.com/sitemap.xml
