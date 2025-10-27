@@ -492,6 +492,122 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #0a0a0a, #1b2735);
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+.article-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00d9ff;
+  position: relative;
+}
+
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #00d9ff;
+  border-radius: 5px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.about-text strong {
+  color: #00d9ff;
+  font-weight: 600;
+}
+
+/* ===== SKILLS ===== */
+.skills-section {
+  margin-top: 40px;
+}
+
+.skills-title {
+  font-size: 1.6rem;
+  color: #00d9ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.skills-list li:hover {
+  background: #00d9ff;
+  color: #111;
+  transform: translateY(-4px);
+}
+
+.skills-list i {
+  color: #00d9ff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.skills-list li:hover i {
+  color: #111;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 6%;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-title {
+    font-size: 1.8rem;
+  }
+}
 
 /*-----------------------------------*\
   #RESUME
@@ -1120,4 +1236,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* (ঐচ্ছিক) sidebar ভিতরের spacing বড় করলে ভালো লাগে */
   .sidebar { padding: 40px; }
   .avatar-box img { width: 160px; } /* যদি avatar ছোট লেগে থাকে বাড়াতে পারবেন */
+
 }
