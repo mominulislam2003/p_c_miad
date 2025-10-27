@@ -491,6 +491,34 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+.skill {
+  margin: 15px 0;
+}
+
+.skill span {
+  font-weight: 600;
+  color: #00d9ff;
+}
+
+.bar {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00d9ff, #00ffa3);
+  border-radius: 5px;
+  animation: grow 1.8s ease forwards;
+}
+
+@keyframes grow {
+  from {width: 0;}
+  to {width: var(--width);}
+}
 
 /* 
 .about {
@@ -1238,4 +1266,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 160px; } /* যদি avatar ছোট লেগে থাকে বাড়াতে পারবেন */
 
 }
+
 
