@@ -492,7 +492,7 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 
-/* ===== ABOUT SECTION ===== */
+/* 
 .about {
   padding: 60px 10%;
   background: linear-gradient(135deg, #0a0a0a, #1b2735);
@@ -607,7 +607,7 @@ main {
   .article-title {
     font-size: 1.8rem;
   }
-}
+} */
 
 /*-----------------------------------*\
   #RESUME
@@ -1238,3 +1238,4 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 160px; } /* যদি avatar ছোট লেগে থাকে বাড়াতে পারবেন */
 
 }
+
