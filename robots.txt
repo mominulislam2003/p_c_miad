@@ -2,7 +2,8 @@ User-agent: *
 Allow: /
 
 # যদি কোনো ফোল্ডার গোপন রাখতে চাও, তখন Disallow দেবে যেমন:
-# Disallow: /admin/
+# Disallow: /index.html/
 
 Sitemap: https://2003-miad.netlify.app/sitemap.xml
+
 
