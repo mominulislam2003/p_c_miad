@@ -1198,4 +1198,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+/* Remove tap highlight on mobile */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-item, 
+.nav-item i, 
+.nav-item span {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
 
